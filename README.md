@@ -32,7 +32,7 @@ Para usar cart-shop, siga estas etapas:
 docker-compose up
 ```
 
-## ☕ Desligando cart-shop
+## ⛔ Desligando cart-shop
 
 Para desligar cart-shop, siga estas etapas:
 

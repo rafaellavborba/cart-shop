@@ -1,5 +1,5 @@
 <template>
-  <div id="cart-shopping" class="p-5 items-center bg-gradient-to-b from-pink-500 
+  <div id="cart-shopping" class="p-5 bg-gradient-to-b from-pink-500 
     via-purple-500 to-indigo-500 text-white space-x-3 opacity-90">
     <header class="top-24 text-2xl my-3"> Monte seu pacote:</header>
 
@@ -7,12 +7,14 @@
       @update-internet="updateInternet" @update-tv="updateTV" @update-phone="updatePhone" />
     <CartComponent :data-internet="internetSelected" :data-tv="tvSelected" :data-phone="phoneSelected"
       :data-total="total" @remove-internet="removeInternet" @remove-tv="removeTV" @remove-phone="removePhone" />
+
   </div>
 </template>
 
 <script>
 import ProductsComponent from './components/ProductsComponent.vue'
 import CartComponent from './components/CartComponent.vue'
+
 
 
 export default {

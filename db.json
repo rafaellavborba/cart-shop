@@ -1,0 +1,38 @@
+{
+  "internets": [
+    {
+      "id": 1,
+      "name": "100 MB",
+      "price": "R$ 49,00"
+    },
+    {
+      "id": 2,
+      "name": "200 MB",
+      "price": "R$ 69,00"
+    },
+    {
+      "id": 3,
+      "name": "300 MB",
+      "price": "R$ 100,00"
+    }
+  ],
+  "tvs": [
+    {
+      "id": 1,
+      "name": "Ultimate HD",
+      "price": "R$ 38,00"
+    },
+    {
+      "id": 2,
+      "name": "Full HD",
+      "price": "R$ 59,00"
+    }
+  ],
+  "phones": [
+    {
+      "id": 1,
+      "name": "Ilimitado Fixo",
+      "price": "R$ 29,99"
+    }
+  ]
+}

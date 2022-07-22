@@ -53,7 +53,7 @@
               active:bg-violet-600
               focus:outline-none focus:ring focus:ring-violet-300 " @click="clickPhone(phone.name, phone.price)"
           :class="{ 'bg-indigo-400 border-3 shadow-lg shadow-indigo-200': dataPhone === phone.name }">
-          <MDBRadio class="hidden" k="true" :btnCheck="true" :wrap="false" name="internetOptions" :value="phone.name"
+          <MDBRadio class="hidden" k="true" :btnCheck="true" :wrap="false" name="phoneOptions" :value="phone.name"
             :checked="dataPhone" />
           <h3>{{ phone.name }}</h3>
           <h4>{{ phone.price }}</h4>
@@ -102,25 +102,25 @@ export default {
       this.phones = data.phones;
     },
     clickInternet(name, price) {
-      this.$emit('update-internet', name, price); // Envia pro pai
+      this.$emit('update-internet', name, price);
       this.internetAlert = false;
     },
     clickTv(name, price) {
       if (this.dataInternet !== null) {
-        this.$emit('update-tv', name, price); // Envia pro pai
+        this.$emit('update-tv', name, price);
       }
       else {
-        this.$emit('update-tv', null, 'R$ 0'); // Envia pro pai
+        this.$emit('update-tv', null, 'R$ 0');
         this.internetAlert = true;
         console.log(this.internetAlert)
       }
     },
     clickPhone(name, price) {
       if (this.dataInternet !== null) {
-        this.$emit('update-phone', name, price); // Envia pro pai
+        this.$emit('update-phone', name, price);
       }
       else {
-        this.$emit('update-phone', null, 'R$ 0'); // Envia pro pai
+        this.$emit('update-phone', null, 'R$ 0');
         this.internetAlert = true;
       }
     }

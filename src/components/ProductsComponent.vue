@@ -103,16 +103,13 @@ export default {
     },
     clickInternet(name, price) {
       this.$emit('update-internet', name, price);
-      this.internetAlert = false;
     },
     clickTv(name, price) {
       if (this.dataInternet !== null) {
         this.$emit('update-tv', name, price);
       }
       else {
-        this.$emit('update-tv', null, 'R$ 0');
         this.internetAlert = true;
-        console.log(this.internetAlert)
       }
     },
     clickPhone(name, price) {
@@ -120,7 +117,6 @@ export default {
         this.$emit('update-phone', name, price);
       }
       else {
-        this.$emit('update-phone', null, 'R$ 0');
         this.internetAlert = true;
       }
     }
